@@ -1,8 +1,11 @@
-# todos-api
+# Rails5 REST API for Cookbook app
 
-This repo is the source companion for the @scotch-io tutorial series [Build a RESTful JSON API with Rails 5](https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one)
+To install run
+`bundle install`
+`rails server`
 
-* [Part One](https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one) - [source](https://github.com/akabiru/todos-api)
-* [Part Two](https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-two) - [source](https://github.com/akabiru/todos-api/tree/part-two)
-* [Part Three](https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-three) - [source](https://github.com/akabiru/todos-api/tree/part-three)
 
+
+
+
+PS this code was started thanks to this tutorial (https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one)
