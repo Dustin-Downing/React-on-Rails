@@ -4,7 +4,7 @@ To install run
 `bundle install`
 `rails server`
 
-
+## To test locally the server runs on tcp://localhost:3000
 
 
 
