@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     resources :todos do
       resources :items
     end
+    resources :recipes do
+      resources :ingredients
+    end
   end
 
   post 'users/authenticate', to: 'authentication#authenticate'

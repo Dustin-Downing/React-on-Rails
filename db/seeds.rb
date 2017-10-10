@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 50.times do
-  todo = Todo.create(title: Faker::Lorem.word, created_by: User.first.id)
-  todo.items.create(name: Faker::Lorem.word, done: false)
+  recipe = Recipe.create(name: Faker::Lorem.word, description: Faker::Lorem.sentence, time: Random.rand(100))
+  recipe.ingredients.create(name: Faker::Lorem.word, amount: Random.rand(10))
+
+  # todo = Todo.create(title: Faker::Lorem.word, created_by: User.first.id)
+  # todo.items.create(name: Faker::Lorem.word, done: false)
 end

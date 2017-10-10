@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-  skip_before_action :authorize_request, only: :create
+  skip_before_action :authorize_request, only: [:create]
   before_action :set_user, only: [:show, :update, :destroy]
 
   # GET /users
   def index
     # get current user todos
-    # @users = current_user.todos.paginate(page: params[:page], per_page: 20)
+    @users = User.all.paginate(page: params[:page], per_page: 20)
     json_response(@users)
   end
 
@@ -49,6 +49,6 @@ class UsersController < ApplicationController
 
   def set_user
     # TODO: maybe not done
-    @user = User.find_by(email: params[:id])
+    @user = User.find_by(email: params[:email])
   end
 end
