@@ -3,6 +3,7 @@ This is only the backend.  Clone the frontend into a folder called `client`
 
 ## To install
 `bundle install`
+`rake db:setup`
 `cd client`
 `npm install`
 
